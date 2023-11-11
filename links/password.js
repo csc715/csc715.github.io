@@ -1,8 +1,18 @@
-loopy()   
-function loopy() {   
-var sWord =""  
-while (sWord != "909903") {//设置密码 初始密码codeke
-sWord = prompt("输入正确密码才能登陆!")   
-}   
-alert("欢迎访问")   
-}
+function password() 
+{ var testV = 1; 
+var pass1 = prompt('请输入访问密码！',''); 
+while (testV < 3) { 
+if (!pass1) 
+history.go(-1); 
+if (pass1 == "909903") { 
+break; 
+} 
+
+testV+=1; 
+var pass1 = 
+prompt('密码错误！'); 
+} 
+if (pass1!="password" & testV ==3) 
+window.close();
+} 
+document.write(password());
